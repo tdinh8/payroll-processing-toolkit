@@ -27,11 +27,11 @@ function processPayroll(employee) {
     const netPay = grossPay - taxes;
 
     return {
-        name: employee.name,
-        basePay: basePay.toFixed(2),
-        overtimePay: overtimePay.toFixed(2),
-        grossPay: grossPay.toFixed(2),
-        netPay: netPay.toFixed(2),
+        name,
+        basePay,
+        overtimePay,
+        grossPay,
+        netPay
     };
 }
 
